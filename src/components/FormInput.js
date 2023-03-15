@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Row, Form, Button, Col } from 'react-bootstrap';
+import { Row, Form, Col } from 'react-bootstrap';
 import { question } from '../data'
 const FormInput = ({ onAdd, notify }) => {
     const [qu, setQu] = useState('')
