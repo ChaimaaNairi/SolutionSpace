@@ -26,7 +26,7 @@ return (
                     </Accordion.Header>
                     <Accordion.Body className="text-end">
                         <div className="px-3 d-inline ">{item.a}</div>
-                        <button onClick={() => onDeleteItem(item.id)} className="btn-color">مسح  </button>
+                        <button onClick={() => onDeleteItem(item.id)} className="btn-color">Delete  </button>
                     </Accordion.Body>
                 </Accordion.Item>)
 
