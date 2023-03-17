@@ -30,7 +30,7 @@ return (
                     </Accordion.Body>
                 </Accordion.Item>)
 
-            })) : <h2 className="fs-4 text-center p-5">لا يوجد اسئله الان</h2>
+            })) : <h2 className="fs-4 text-center p-5">There are no questions now</h2>
         }
 
 
