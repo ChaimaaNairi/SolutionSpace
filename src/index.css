@@ -9,3 +9,20 @@ body {
   font-family: "Almarai", sans-serif;
   font-size: 15px;
 }
+
+.btn-color {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #224f61;
+  padding: 8px;
+}
+.btn-color:hover {
+  color: rgb(148, 148, 162);
+}
+
+.img-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
