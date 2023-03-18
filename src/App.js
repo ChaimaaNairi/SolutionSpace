@@ -21,14 +21,14 @@ function App() {
     localStorage.removeItem("items")
     question.splice(0, question.length);
     setData([])
-    notify("تم حذف الكل بنجاح", "Success")
+    notify("   All deleted successfully", "Success")
   }
 
   //to delete one item from array
   const deleteOneItem = (items) => {
     localStorage.setItem("items", JSON.stringify([...items]));
     setData([...items])
-    notify("تم حذف السوال بنجاح", "Success")
+    notify(" Question deleted successfully", "Success")
     if (items.length <= 0) {
       deleteAllItems();
     }
