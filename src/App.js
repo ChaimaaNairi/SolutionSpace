@@ -44,7 +44,23 @@ function App() {
     };
   
     return (
-      <div className="App">
+      <div className="font text-center color-body">
+        <Container className="p-5">
+  
+          <Row className="justify-content-center">
+            <Col sm="4">
+              <div className="fs-3 text-center py-2">Common questions and answers  </div>
+            </Col>
+            <Col sm="8">
+              <FormInput onAdd={addItem} notify={notify}/>
+              <QAList data={data} deleteOneItem={deleteOneItem} />
+              {
+                localStorage.getItem("items") != null ? (<button onClick={deleteAllItems} className="btn-color w-100 my-3">مسح الكل</button>) : null
+              }
+            </Col>
+          </Row>
+          <ToastContainer />
+        </Container>
       </div>
     );
   }
