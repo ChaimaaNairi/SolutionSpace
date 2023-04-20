@@ -55,7 +55,7 @@ function App() {
               <FormInput onAdd={addItem} notify={notify}/>
               <QAList data={data} deleteOneItem={deleteOneItem} />
               {
-                localStorage.getItem("items") != null ? (<button onClick={deleteAllItems} className="btn-color w-100 my-3">مسح الكل</button>) : null
+                localStorage.getItem("items") != null ? (<button onClick={deleteAllItems} className="btn-color w-100 my-3">delete all </button>) : null
               }
             </Col>
           </Row>
